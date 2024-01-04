@@ -1,0 +1,1673 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden;
+}
+
+body* {
+  font-family: serif;
+}
+
+body h2 {
+  font-size: 24px;
+}
+
+body div.rhombus {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: solid 10px #f9f9f9;
+  background-color: #A3A6FF;
+  transform: rotate(-45deg);
+  z-index: 2;
+  margin: 0;
+}
+body div.rhombus h2 {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  transform: rotate(45deg);
+  text-align: center;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+header {
+  position: fixed;
+  width: 100%;
+  /*--fadeinで表示--*/
+  transform: translateY(30%);
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: 100;
+  /*============================
+      #menu
+      ============================*/
+  /*============================
+      #top
+      ============================*/
+}
+header nav#Menu {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  /*============================
+  #menu
+  ============================*/
+}
+header nav#Menu ul {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: nowrap;
+  background: linear-gradient(to bottom, #ffffff, transparent);
+}
+header nav#Menu ul li {
+  width: 200px;
+  height: 80px;
+  font-size: 24px;
+  line-height: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+header div#top {
+  position: relative;
+  top: 0;
+  left: 0;
+  /*============================
+  #slideshow
+  ============================*/
+}
+header div#top div#slideshow {
+  width: 100%;
+}
+header div#top div#slideshow div {
+  width: 100%;
+}
+header div#top div#slideshow div picture {
+  width: 100%;
+}
+header div#top div#slideshow div picture source {
+  width: 100%;
+  display: block;
+}
+header div#top div#slideshow div picture img {
+  width: 100%;
+  display: block;
+}
+main {
+  /*============================
+      #top
+      ============================*/
+}
+@media screen and (min-width: 1080px) {
+  main div#top {
+    /*============================
+    #content01
+    ============================*/
+    /*============================
+    #content02
+    ============================*/
+    /*============================
+    #content03
+    ============================*/
+    /*============================
+    #content04
+    ============================*/
+    /*============================
+    #contact-in
+    ============================*/
+    /*============================
+    #profile
+    ============================*/
+    /*======================================================================
+    blog
+    =======================================================================*/
+    /*======================================================================
+    archive-page
+    =======================================================================*/
+  }
+  main div#top div#content01 {
+    aspect-ratio: 1280/406;
+    background-image: url(../photos/pc-photo/business-details.jpg);
+    background-position: center;
+    background-size: cover;
+    /*--スライドインで表示--*/
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content01 div {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    color: #f3f3f3;
+    z-index: 12;
+  }
+  main div#top div#content01 div h2 {
+    width: 100%;
+  }
+  main div#top div#content01 div p {
+    width: 100%;
+  }
+  main div#top div#content01 div h3 {
+    width: 100%;
+  }
+  main div#top div#content02 {
+    padding-bottom: 60px;
+  }
+  main div#top div#content02 ul {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  main div#top div#content02 ul li {
+    width: 340px;
+    margin: 0 25px;
+    list-style: none;
+  }
+  main div#top div#content02 ul li div.c2fadein {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: translateY(30px);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content02 ul li div.c2fadein div.rhombus {
+    width: 140px;
+    height: 140px;
+  }
+  main div#top div#content02 ul li div.c2fadein div.content {
+    aspect-ratio: 340/239;
+    margin-top: 60px;
+    color: #f9f9f9;
+  }
+  main div#top div#content02 ul li div.c2fadein div.content.codding {
+    background-image: url(../photos/pc-photo/codding.jpg);
+  }
+  main div#top div#content02 ul li div.c2fadein div.content.wp {
+    background-image: url(../photos/pc-photo/wp.jpg);
+  }
+  main div#top div#content02 ul li div.c2fadein div.content.maintenance {
+    background-image: url(../photos/pc-photo/maintenance.jpg);
+  }
+  main div#top div#content02 ul li div.c2fadein div.content div.rgba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.6);
+  }
+  main div#top div#content02 ul li div.c2fadein div.content div.rgba p {
+    margin: 0 45px;
+  }
+  main div#top div#content02 ul li div.c2fadein a {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    margin-top: 40px;
+  }
+  main div#top div#content03 {
+    position: relative;
+  }
+  main div#top div#content03 div.rhombus {
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 120px;
+  }
+  main div#top div#content03 div.rhombus h2 {
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    transform: rotate(45deg);
+    text-align: center;
+  }
+  main div#top div#content03 div.top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main div#top div#content03 div.top div.appeal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    aspect-ratio: 642/345;
+    background-image: url(../photos/pc-photo/appeal.jpg);
+    background-position: center;
+    background-size: cover;
+    /*--スライドイン処理--*/
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content03 div.top div.appeal h3 {
+    padding: 0 80px;
+  }
+  main div#top div#content03 div.top div.appeal p {
+    padding: 0 80px;
+  }
+  main div#top div#content03 div.top div.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    aspect-ratio: 642/345;
+    background-image: url(../photos/pc-photo/works.jpg);
+    background-position: center;
+    background-size: cover;
+    /*--スライドイン処理--*/
+    transform: translateX(50%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content03 div.top div.works h3 {
+    padding: 0 80px;
+  }
+  main div#top div#content03 div.top div.works p {
+    padding: 0 80px;
+  }
+  main div#top div#content03 div.top img {
+    display: block;
+    width: 50%;
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content03 div.top img:nth-of-type(1) {
+    transform: translateX(50%);
+  }
+  main div#top div#content03 div.top img:nth-of-type(2) {
+    transform: translateX(-50%);
+  }
+  main div#top div#content04 {
+    width: 100%;
+  }
+  main div#top div#content04 div.back-menu {
+    margin: 80px auto 50px;
+  }
+  main div#top div#content04 div.back-menu div.rhombus {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  main div#top div#content04 div.slideshow02 {
+    display: flex;
+    justify-content: space-around;
+    min-width: 1040px;
+    padding: 0 100px;
+    margin: 0 auto;
+    /*--スライドインで表示--*/
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content04 div.slideshow02 article {
+    width: 210px;
+    margin: 0 25px;
+  }
+  main div#top div#content04 div.slideshow02 article img {
+    width: 100%;
+    display: block;
+  }
+  main div#top div#content04 div.slideshow02 article div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+    background-color: #D9D9D9;
+    padding: 25px;
+  }
+  main div#top div#contact-in {
+    transform: translateX(50%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#contact-in div.contact-back {
+    margin: 80px auto 50px;
+  }
+  main div#top div#contact-in div.contact-back div.rhombus {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+  }
+  main div#top div#contact-in form {
+    max-width: 980px;
+    width: calc(100vw - 300px);
+    margin: 0 auto;
+    background-color: #D9D9D9;
+    padding: 25px 50px;
+  }
+  main div#top div#contact-in form p {
+    text-align: center;
+  }
+  main div#top div#contact-in form label {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    margin: 25px 0;
+  }
+  main div#top div#contact-in form label h3 {
+    width: 30%;
+    text-align: left;
+  }
+  main div#top div#contact-in form label input {
+    width: 70%;
+    height: 40px;
+    background-color: #f3f3f3;
+  }
+  main div#top div#contact-in form label textarea {
+    width: 70%;
+    height: 120px;
+    background-color: #f3f3f3;
+  }
+  main div#top div#contact-in form button {
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f3f3f3;
+    margin: 25px auto 0;
+  }
+  main div#top div.profile-container {
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    opacity: 0;
+    overflow: hidden;
+  }
+  main div#top div.profile-container div#profile {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  main div#top div.profile-container div#profile div.profile-back {
+    margin: 80px auto 50px;
+  }
+  main div#top div.profile-container div#profile div.profile-back div.rhombus {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+  }
+  main div#top div.profile-container div#profile div.profile-inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+  main div#top div.profile-container div#profile div.profile-inner img.profile-img {
+    width: 30%;
+    aspect-ratio: 223/141;
+  }
+  main div#top div.profile-container div#profile div.profile-inner div.profile-text {
+    width: 70%;
+    padding: 0 40px;
+  }
+  main div#top div.profile-container div#profile div.profile-inner div.profile-text h3 {
+    width: 100%;
+    font-size: 24px;
+    padding: 0 0 40px;
+  }
+  main div#top div.profile-container div#profile div.profile-inner div.profile-text h3 rt {
+    font-size: 50%;
+    font-weight: lighter;
+  }
+  main div#top div.profile-container div#profile div.profile-inner div.profile-text p {
+    width: 100%;
+  }
+  main div#top div.profile-container div#profile div.programming-text h3 {
+    font-size: 20px;
+    padding: 40px 0 20px;
+  }
+  main div#top div.profile-container div#profile div.programming-text p {
+    width: 100%;
+    padding: 0 200px 20px;
+  }
+  main div#top div.profile-container div#profile ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 900px;
+    margin: 0 auto;
+  }
+  main div#top div.profile-container div#profile ul li {
+    width: 100%;
+    list-style: none;
+  }
+  main div#top div.profile-container div#profile ul li a {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+  main div#top div.profile-container div#profile ul li a img {
+    display: block;
+    width: 20%;
+  }
+  main div#top div.profile-container div#profile ul li a div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  main div#top div.profile-container div#profile ul li a div img {
+    display: block;
+    width: 150px;
+  }
+  main div#top div.profile-container div#profile ul li a div h2 {
+    width: 100%;
+    padding: 10px 40px;
+    text-align: center;
+  }
+  main div#top div.profile-container div#profile ul li a div p {
+    width: 100%;
+    padding: 0 40px;
+  }
+  main div#top div.blog {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+  main div#top div.blog img.thumbnail {
+    width: 100%;
+  }
+  main div#top div.blog div.blog-inner {
+    display: inline-block;
+    width: auto;
+    padding: 0;
+  }
+  main div#top div.blog div.blog-inner div.date {
+    display: inline-block;
+    padding: 40px 0;
+  }
+  main div#top div.blog div.blog-inner div.category {
+    display: inline-block;
+    width: auto;
+    padding: 40px;
+  }
+  main div#top div.blog div.blog-inner div.category p {
+    display: inline-block;
+  }
+  main div#top div.blog div.blog-inner h2,
+  main div#top div.blog div.blog-inner h3,
+  main div#top div.blog div.blog-inner h4 {
+    padding: 30px 0 10px;
+  }
+  main div#top div.blog div.blog-inner p {
+    padding: 10px 0;
+  }
+  main div#top div.blog div.blog-inner pre {
+    margin: 10px 0;
+  }
+  main div#top div.archive {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  main div#top div.archive h2 {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 10px;
+    margin: 0 auto;
+  }
+  main div#top div.archive p {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 10px;
+    margin: 0 auto;
+  }
+  main div#top div.archive div.archive-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1400px;
+    width: 100%;
+  }
+  main div#top div.archive div.archive-content div {
+    position: relative;
+    width: 350px;
+    height: auto;
+    padding: 25px;
+  }
+  main div#top div.archive div.archive-content div div.category {
+    position: absolute;
+    width: auto;
+    top: 25px;
+    left: 25px;
+    padding: 10px 15px;
+    font-size: 20px;
+    line-height: 20px;
+    background-color: #fff;
+  }
+  main div#top div.archive div.archive-content div div.category p {
+    width: auto;
+    display: inline-block;
+    padding: 0;
+  }
+  main div#top div.archive div.archive-content div img {
+    width: 100%;
+    aspect-ratio: 300/187;
+  }
+  main div#top div.archive div.archive-content div div {
+    width: 100%;
+    padding: 25px;
+    background-color: #D9D9D9;
+  }
+  main div#top div.archive div.archive-content div div h3 {
+    padding-bottom: 15px;
+  }
+  main div#top div.archive div.archive-content div div p {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1079px) {
+  main div#top {
+    /*============================
+    #content01
+    ============================*/
+    /*============================
+    #content02
+    ============================*/
+    /*============================
+    #content03
+    ============================*/
+    /*============================
+    #content04
+    ============================*/
+    /*============================
+    #contact-in
+    ============================*/
+    /*============================
+    #profile
+    ============================*/
+    /*======================================================================
+    blog
+    =======================================================================*/
+    /*======================================================================
+    archive-page
+    =======================================================================*/
+  }
+  main div#top div#content01 {
+    aspect-ratio: 600/406;
+    background-image: url(../photos/tab-photo/business-details-tab.jpg);
+    background-position: center;
+    background-size: cover;
+    /*--スライドインで表示--*/
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content01 div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    color: #f3f3f3;
+  }
+  main div#top div#content01 div h2 {
+    width: 100%;
+  }
+  main div#top div#content01 div p {
+    width: 100%;
+  }
+  main div#top div#content01 div h3 {
+    width: 100%;
+  }
+  main div#top div#content02 {
+    padding-bottom: 110px;
+  }
+  main div#top div#content02 ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main div#top div#content02 ul li {
+    width: 340px;
+    margin: 0 25px;
+    list-style: none;
+  }
+  main div#top div#content02 ul li div.c2fadein {
+    aspect-ratio: 450/319;
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    color: #f9f9f9;
+    transform: translateY(30px);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content02 ul li div.c2fadein:nth-of-type(1n) {
+    background-image: url(../photos/pc-photo/codding.jpg);
+  }
+  main div#top div#content02 ul li div.c2fadein:nth-of-type(2n) {
+    background-image: url(../photos/pc-photo/wp.jpg);
+  }
+  main div#top div#content02 ul li div.c2fadein:nth-of-type(3n) {
+    background-image: url(../photos/pc-photo/maintenance.jpg);
+  }
+  main div#top div#content02 ul li div.c2fadein div.rhombus h2 {
+    width: 100%;
+    height: 60px;
+    line-height: 20px;
+    font-size: 18px;
+    text-align: center;
+    padding: 25px 0 15px;
+  }
+  main div#top div#content02 ul li div.c2fadein div.content p {
+    margin: 0 30px;
+  }
+  main div#top div#content02 ul li div.c2fadein a {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #D9D9D9;
+    color: black;
+    border-radius: 20px;
+    margin: 30px auto 0;
+  }
+  main div#top div#content03 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #D9D9D9;
+    padding: 100px 0 40px;
+  }
+  main div#top div#content03 div.rhombus {
+    position: absolute;
+    top: -60px;
+    left: calc(50% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 120px;
+    height: 120px;
+    border: solid 10px #f9f9f9;
+    background-color: #A3A6FF;
+    transform: rotate(-45deg);
+    z-index: 2;
+  }
+  main div#top div#content03 div.rhombus h2 {
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    transform: rotate(45deg);
+    text-align: center;
+  }
+  main div#top div#content03 div.top {
+    width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main div#top div#content03 div.top div.appeal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    width: 420px;
+    aspect-ratio: 420/220;
+    background-image: url(../photos/tab-photo/appeal-tab.jpg);
+    background-position: center;
+    background-size: cover;
+    /*--スライドイン処理--*/
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content03 div.top div.appeal h3 {
+    padding: 0 20px;
+  }
+  main div#top div#content03 div.top div.appeal p {
+    padding: 0 20px;
+  }
+  main div#top div#content03 div.top div.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    order: 4;
+    width: 420px;
+    aspect-ratio: 420/220;
+    background-image: url(../photos/tab-photo/works-tab.jpg);
+    background-position: center;
+    background-size: cover;
+    /*--スライドイン処理--*/
+    transform: translateX(50%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content03 div.top div.works h3 {
+    padding: 0 20px;
+  }
+  main div#top div#content03 div.top div.works p {
+    padding: 0 20px;
+  }
+  main div#top div#content03 div.top img {
+    display: block;
+    width: 420px;
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content03 div.top img:nth-of-type(1) {
+    transform: translateX(50%);
+    order: 1;
+  }
+  main div#top div#content03 div.top img:nth-of-type(2) {
+    transform: translateX(-50%);
+    order: 3;
+    margin-top: 40px;
+  }
+  main div#top div#content04 {
+    width: 100%;
+  }
+  main div#top div#content04 div.back-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    aspect-ratio: 1280/234;
+    background-image: url("../photos/pc-photo/menu.png");
+    background-size: cover;
+    background-position: center;
+  }
+  main div#top div#content04 div.back-menu h2 {
+    width: 100%;
+    text-align: center;
+  }
+  main div#top div#content04 div.slideshow02 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 660px;
+    padding: 0;
+    margin: 0 auto;
+    /*--スライドインで表示--*/
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content04 div.slideshow02 div div.slick-slide {
+    width: 330px;
+  }
+  main div#top div#content04 div.slideshow02 div div.slick-slide div {
+    width: 100% !important;
+    padding: 20px 15px;
+  }
+  main div#top div#content04 div.slideshow02 div div.slick-slide div article {
+    width: 100%;
+  }
+  main div#top div#content04 div.slideshow02 div div.slick-slide div article img {
+    width: 100%;
+    display: block;
+  }
+  main div#top div#content04 div.slideshow02 div div.slick-slide div article div.slide2-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+    background-color: #D9D9D9;
+    padding: 25px;
+    margin: 0;
+  }
+  main div#top div#contact-in {
+    transform: translateX(50%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#contact-in div.contact-back {
+    width: 100%;
+    aspect-ratio: 1280/189;
+    background-image: url("../photos/pc-photo/contact.png");
+    background-position: center;
+    background-size: cover;
+  }
+  main div#top div#contact-in div.contact-back h2 {
+    width: 100%;
+    line-height: 15vw;
+    text-align: center;
+  }
+  main div#top div#contact-in form {
+    max-width: 600px;
+    width: calc(100vw - 300px);
+    margin: 0 auto;
+    background-color: #D9D9D9;
+    padding: 25px 50px;
+  }
+  main div#top div#contact-in form p {
+    text-align: center;
+  }
+  main div#top div#contact-in form label {
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    margin: 15px auto 25px;
+  }
+  main div#top div#contact-in form label h3 {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+  }
+  main div#top div#contact-in form label input {
+    width: 100%;
+    height: 40px;
+    background-color: #f3f3f3;
+  }
+  main div#top div#contact-in form label textarea {
+    width: 100%;
+    height: 120px;
+    background-color: #f3f3f3;
+  }
+  main div#top div#contact-in form button {
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f3f3f3;
+    margin: 25px auto 0;
+  }
+  main div#top div.profile-container {
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    opacity: 0;
+    overflow: hidden;
+  }
+  main div#top div.profile-container div#profile {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px 60px;
+    margin: 0 auto;
+  }
+  main div#top div.profile-container div#profile div.profile-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 1280/280;
+    background-image: url("../photos/pc-photo/profile.png");
+    background-position: center;
+    background-size: cover;
+  }
+  main div#top div.profile-container div#profile div.profile-back h2 {
+    width: 100%;
+    text-align: center;
+  }
+  main div#top div.profile-container div#profile div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  main div#top div.profile-container div#profile div img.profile-img {
+    width: 300px;
+    aspect-ratio: 223/141;
+  }
+  main div#top div.profile-container div#profile div h3 {
+    width: 100%;
+    font-size: 24px;
+    padding: 40px 0 20px;
+    text-align: center;
+  }
+  main div#top div.profile-container div#profile div h3 rt {
+    font-size: 50%;
+    font-weight: lighter;
+  }
+  main div#top div.profile-container div#profile div div.profile-text {
+    width: 100%;
+    padding: 0 40px 20px;
+  }
+  main div#top div.profile-container div#profile div div.profile-text p {
+    width: 100%;
+  }
+  main div#top div.profile-container div#profile div.programming-text h3 {
+    font-size: 20px;
+    padding: 40px 0 20px;
+  }
+  main div#top div.profile-container div#profile div.programming-text p {
+    width: 100%;
+    padding: 0 40px 20px;
+  }
+  main div#top div.profile-container div#profile ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+  }
+  main div#top div.profile-container div#profile ul li {
+    width: 18%;
+    list-style: none;
+  }
+  main div#top div.profile-container div#profile ul li a {
+    display: block;
+    width: 100%;
+  }
+  main div#top div.profile-container div#profile ul li a img {
+    display: block;
+    width: 100%;
+  }
+  main div#top div.blog {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0 60px;
+  }
+  main div#top div.blog img.thumbnail {
+    width: 100%;
+  }
+  main div#top div.blog div.blog-inner {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+  }
+  main div#top div.blog div.blog-inner div.date {
+    display: inline-block;
+    padding: 20px 0;
+  }
+  main div#top div.blog div.blog-inner div.category {
+    display: inline-block;
+    width: auto;
+    padding: 20px;
+  }
+  main div#top div.blog div.blog-inner div.category p {
+    display: inline-block;
+  }
+  main div#top div.blog div.blog-inner h2,
+  main div#top div.blog div.blog-inner h3,
+  main div#top div.blog div.blog-inner h4 {
+    padding: 20px 0 5px;
+  }
+  main div#top div.blog div.blog-inner p {
+    padding: 5px 0;
+  }
+  main div#top div.blog div.blog-inner pre {
+    margin: 5px 0;
+  }
+  main div#top div.archive {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+  main div#top div.archive h2 {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 10px;
+    margin: 0 auto;
+  }
+  main div#top div.archive p {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 10px;
+    margin: 0 auto;
+  }
+  main div#top div.archive div.archive-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  main div#top div.archive div.archive-content div {
+    position: relative;
+    width: 350px;
+    height: auto;
+    padding: 25px;
+  }
+  main div#top div.archive div.archive-content div div.category {
+    position: absolute;
+    width: auto;
+    top: 25px;
+    left: 25px;
+    padding: 10px 15px;
+    font-size: 20px;
+    line-height: 20px;
+    background-color: #fff;
+  }
+  main div#top div.archive div.archive-content div div.category p {
+    width: auto;
+    display: inline-block;
+    padding: 0;
+  }
+  main div#top div.archive div.archive-content div img {
+    width: 100%;
+    aspect-ratio: 300/187;
+  }
+  main div#top div.archive div.archive-content div div {
+    width: 100%;
+    padding: 25px;
+    background-color: #D9D9D9;
+  }
+  main div#top div.archive div.archive-content div div h3 {
+    padding-bottom: 15px;
+  }
+  main div#top div.archive div.archive-content div div p {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  main div#top {
+    /*============================
+    #content01
+    ============================*/
+    /*============================
+    #content02
+    ============================*/
+    /*============================
+    #content03
+    ============================*/
+    /*============================
+    #content04
+    ============================*/
+    /*============================
+    #contact-in
+    ============================*/
+    /*============================
+    #profile
+    ============================*/
+    /*======================================================================
+    blog
+    =======================================================================*/
+    /*======================================================================
+    archive-page
+    =======================================================================*/
+  }
+  main div#top div#content01 {
+    aspect-ratio: 600/406;
+    background-image: url(../photos/tab-photo/business-details-tab.jpg);
+    background-position: center;
+    background-size: cover;
+    /*--スライドインで表示--*/
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content01 div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    color: #f3f3f3;
+  }
+  main div#top div#content01 div h2 {
+    width: 100%;
+  }
+  main div#top div#content01 div p {
+    width: 100%;
+  }
+  main div#top div#content01 div h3 {
+    width: 100%;
+  }
+  main div#top div#content02 {
+    padding-bottom: 110px;
+  }
+  main div#top div#content02 ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main div#top div#content02 ul li {
+    width: 300px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 5px;
+  }
+  main div#top div#content02 ul li div.c2fadein {
+    width: 100%;
+    aspect-ratio: 450/319;
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    color: #f9f9f9;
+    transform: translateY(30px);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content02 ul li div.c2fadein:nth-of-type(1n) {
+    background-image: url(../photos/pc-photo/codding.jpg);
+  }
+  main div#top div#content02 ul li div.c2fadein:nth-of-type(2n) {
+    background-image: url(../photos/pc-photo/wp.jpg);
+  }
+  main div#top div#content02 ul li div.c2fadein:nth-of-type(3n) {
+    background-image: url(../photos/pc-photo/maintenance.jpg);
+  }
+  main div#top div#content02 ul li div.c2fadein div.rhombus h2 {
+    width: 100%;
+    height: 60px;
+    line-height: 20px;
+    font-size: 18px;
+    text-align: center;
+    padding: 25px 0 15px;
+  }
+  main div#top div#content02 ul li div.c2fadein div.content p {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+  main div#top div#content02 ul li div.c2fadein a {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #D9D9D9;
+    color: black;
+    border-radius: 20px;
+    margin: 15px auto 0;
+  }
+  main div#top div#content03 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #D9D9D9;
+    padding: 100px calc((100% - 300px) / 2) 40px;
+  }
+  main div#top div#content03 div.rhombus {
+    position: absolute;
+    top: -60px;
+    left: calc(50% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 120px;
+    height: 120px;
+    border: solid 10px #f9f9f9;
+    background-color: #A3A6FF;
+    transform: rotate(-45deg);
+    z-index: 2;
+  }
+  main div#top div#content03 div.rhombus h2 {
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    transform: rotate(45deg);
+    text-align: center;
+  }
+  main div#top div#content03 div.top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main div#top div#content03 div.top div.appeal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    order: 2;
+    width: 100%;
+    aspect-ratio: 280/250;
+    background-image: url(../photos/sp-photo/appeal-sp.jpg);
+    background-position: center;
+    background-size: cover;
+    /*--スライドイン処理--*/
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content03 div.top div.appeal h3 {
+    padding: 0 20px 20px;
+  }
+  main div#top div#content03 div.top div.appeal p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+  main div#top div#content03 div.top div.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    order: 4;
+    width: 100%;
+    aspect-ratio: 280/250;
+    background-image: url(../photos/sp-photo/works-sp.jpg);
+    background-position: center;
+    background-size: cover;
+    /*--スライドイン処理--*/
+    transform: translateX(50%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content03 div.top div.works h3 {
+    padding: 0 20px 20px;
+  }
+  main div#top div#content03 div.top div.works p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+  main div#top div#content03 div.top img {
+    display: block;
+    width: 100%;
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#content03 div.top img:nth-of-type(1) {
+    transform: translateX(50%);
+    order: 1;
+  }
+  main div#top div#content03 div.top img:nth-of-type(2) {
+    transform: translateX(-50%);
+    order: 3;
+    margin-top: 40px;
+  }
+  main div#top div#content04 {
+    width: 100%;
+  }
+  main div#top div#content04 div.back-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    aspect-ratio: 1280/234;
+    background-image: url("../photos/pc-photo/menu.png");
+    background-size: cover;
+    background-position: center;
+  }
+  main div#top div#content04 div.back-menu h2 {
+    width: 100%;
+    text-align: center;
+  }
+  main div#top div#content04 div.slideshow02 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    padding: 0;
+    margin: 0 auto;
+    /*--スライドインで表示--*/
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    opacity: 0;
+    padding: 0 40px;
+  }
+  main div#top div#content04 div.slideshow02 article {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  main div#top div#content04 div.slideshow02 article img {
+    width: 100%;
+    display: block;
+  }
+  main div#top div#content04 div.slideshow02 article div.slide2-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: #D9D9D9;
+    padding: 25px;
+    margin: 0;
+  }
+  main div#top div#content04 div.slideshow02 article div.slide2-content p.category {
+    font-size: 14px;
+  }
+  main div#top div#content04 div.slideshow02 article div.slide2-content p.date {
+    font-size: 14px;
+  }
+  main div#top div#content04 div.slideshow02 article div.slide2-content p.text {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  main div#top div#contact-in {
+    transform: translateX(50%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  main div#top div#contact-in div.contact-back {
+    width: 100%;
+    aspect-ratio: 1280/189;
+    background-image: url("../photos/pc-photo/contact.png");
+    background-position: center;
+    background-size: cover;
+  }
+  main div#top div#contact-in div.contact-back h2 {
+    width: 100%;
+    line-height: 15vw;
+    text-align: center;
+  }
+  main div#top div#contact-in form {
+    max-width: 400px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    background-color: #D9D9D9;
+    padding: 25px 20px;
+  }
+  main div#top div#contact-in form p {
+    text-align: center;
+  }
+  main div#top div#contact-in form label {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    margin: 10px auto 25px;
+  }
+  main div#top div#contact-in form label h3 {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+  }
+  main div#top div#contact-in form label input {
+    width: 100%;
+    height: 40px;
+    background-color: #f3f3f3;
+  }
+  main div#top div#contact-in form label textarea {
+    width: 100%;
+    height: 120px;
+    background-color: #f3f3f3;
+  }
+  main div#top div#contact-in form button {
+    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f3f3f3;
+    margin: 25px auto 0;
+  }
+  main div#top div.profile-container {
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    opacity: 0;
+    overflow: hidden;
+  }
+  main div#top div.profile-container div#profile {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px 20px;
+    margin: 0 auto;
+  }
+  main div#top div.profile-container div#profile div.profile-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 1280/280;
+    background-image: url("../photos/pc-photo/profile.png");
+    background-position: center;
+    background-size: cover;
+  }
+  main div#top div.profile-container div#profile div.profile-back h2 {
+    width: 100%;
+    text-align: center;
+  }
+  main div#top div.profile-container div#profile div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  main div#top div.profile-container div#profile div img.profile-img {
+    width: 250px;
+    aspect-ratio: 223/141;
+  }
+  main div#top div.profile-container div#profile div h3 {
+    width: 100%;
+    font-size: 24px;
+    padding: 40px 0 20px;
+    text-align: center;
+  }
+  main div#top div.profile-container div#profile div h3 rt {
+    font-size: 50%;
+    font-weight: lighter;
+  }
+  main div#top div.profile-container div#profile div div.profile-text {
+    width: 100%;
+    padding: 0;
+  }
+  main div#top div.profile-container div#profile div div.profile-text p {
+    width: 100%;
+  }
+  main div#top div.profile-container div#profile div.programming-text h3 {
+    font-size: 20px;
+    padding: 40px 0 20px;
+  }
+  main div#top div.profile-container div#profile div.programming-text p {
+    width: 100%;
+    padding: 0 0 20px;
+  }
+  main div#top div.profile-container div#profile ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  main div#top div.profile-container div#profile ul li {
+    width: 18%;
+    list-style: none;
+  }
+  main div#top div.profile-container div#profile ul li a {
+    display: block;
+    width: 100%;
+  }
+  main div#top div.profile-container div#profile ul li a img {
+    display: block;
+    width: 100%;
+  }
+  main div#top div.blog {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 10px;
+  }
+  main div#top div.blog img.thumbnail {
+    width: 100%;
+  }
+  main div#top div.blog div.blog-inner {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+  }
+  main div#top div.blog div.blog-inner div.date {
+    display: inline-block;
+    padding: 20px 0;
+  }
+  main div#top div.blog div.blog-inner div.category {
+    display: inline-block;
+    width: auto;
+    padding: 20px;
+  }
+  main div#top div.blog div.blog-inner div.category p {
+    display: inline-block;
+  }
+  main div#top div.blog div.blog-inner h2,
+  main div#top div.blog div.blog-inner h3,
+  main div#top div.blog div.blog-inner h4 {
+    padding: 20px 0 5px;
+  }
+  main div#top div.blog div.blog-inner p {
+    padding: 5px 0;
+  }
+  main div#top div.blog div.blog-inner pre {
+    margin: 5px 0;
+  }
+  main div#top div.archive {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+  main div#top div.archive h2 {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 10px;
+    margin: 0 auto;
+  }
+  main div#top div.archive p {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 10px;
+    margin: 0 auto;
+  }
+  main div#top div.archive div.archive-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  main div#top div.archive div.archive-content div {
+    position: relative;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+  }
+  main div#top div.archive div.archive-content div div.category {
+    position: absolute;
+    width: auto;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+    line-height: 20px;
+    background-color: #fff;
+  }
+  main div#top div.archive div.archive-content div div.category p {
+    width: auto;
+    display: inline-block;
+    padding: 0;
+  }
+  main div#top div.archive div.archive-content div img {
+    width: 100%;
+    aspect-ratio: 300/187;
+  }
+  main div#top div.archive div.archive-content div div {
+    width: 100%;
+    padding: 25px;
+    background-color: #D9D9D9;
+  }
+  main div#top div.archive div.archive-content div div h3 {
+    padding-bottom: 15px;
+  }
+  main div#top div.archive div.archive-content div div p {
+    padding: 0;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: #d9d9d9;
+  overflow: hidden;
+}
+footer p {
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+}
+
+/*--付与クラス--------------------------------------*/
+.c2in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.c3sin {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+.c4sin {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+.position {
+  position: relative;
+  z-index: 11;
+}/*# sourceMappingURL=style.css.map */

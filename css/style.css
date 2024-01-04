@@ -1,0 +1,302 @@
+@media screen and (min-width: 900px) {
+  body* {
+    font-family: serif;
+  }
+  body h2 {
+    font-size: 24px;
+  }
+  header {
+    width: 100%;
+    /*============================
+    #menu
+    ============================*/
+    /*============================
+    #top
+    ============================*/
+  }
+  header div#Menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*============================
+    #menu
+    ============================*/
+  }
+  header div#Menu ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  header div#Menu ul li {
+    width: 200px;
+    height: 80px;
+    font-size: 24px;
+    line-height: 80px;
+    text-align: center;
+  }
+  header div#top {
+    position: relative;
+    top: 0;
+    left: 0;
+    /*============================
+    #slideshow
+    ============================*/
+  }
+  header div#top div#slideshow {
+    width: 100%;
+  }
+  header div#top div#slideshow div {
+    width: 100%;
+  }
+  header div#top div#slideshow div img {
+    width: 100%;
+  }
+  main {
+    /*============================
+    #top
+    ============================*/
+  }
+  main div#top {
+    /*============================
+    #content01
+    ============================*/
+    /*============================
+    #content02
+    ============================*/
+    /*============================
+    #content03
+    ============================*/
+    /*============================
+    #content04
+    ============================*/
+    /*============================
+    #contact-in
+    ============================*/
+    /*============================
+    #profile
+    ============================*/
+  }
+  main div#top div#content01 {
+    aspect-ratio: 1280/406;
+    background-image: url(../photos/pc-photo/business-details.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  main div#top div#content01 div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    color: #f3f3f3;
+  }
+  main div#top div#content01 div h2 {
+    width: 100%;
+  }
+  main div#top div#content01 div p {
+    width: 100%;
+  }
+  main div#top div#content01 div h3 {
+    width: 100%;
+  }
+  main div#top div#content02 ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+  }
+  main div#top div#content02 ul li {
+    width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 25px;
+  }
+  main div#top div#content02 ul li div.rhombus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 120px;
+    height: 120px;
+    border: solid 10px #f9f9f9;
+    background-color: #A3A6FF;
+    transform: rotate(-45deg);
+  }
+  main div#top div#content02 ul li div.rhombus h2 {
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    transform: rotate(45deg);
+    text-align: center;
+  }
+  main div#top div#content02 ul li div.content {
+    aspect-ratio: 340/239;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+    color: #f9f9f9;
+  }
+  main div#top div#content02 ul li div.content.codding {
+    background-image: url(../photos/pc-photo/codding.jpg);
+  }
+  main div#top div#content02 ul li div.content.wp {
+    background-image: url(../photos/pc-photo/wp.jpg);
+  }
+  main div#top div#content02 ul li div.content.maintenance {
+    background-image: url(../photos/pc-photo/maintenance.jpg);
+  }
+  main div#top div#content02 ul li div.content p {
+    margin: 0 45px;
+  }
+  main div#top div#content02 ul li a {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    margin-top: 40px;
+  }
+  main div#top div#content03 div.top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main div#top div#content03 div.top div.appeal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    aspect-ratio: 642/345;
+    background-image: url(../photos/pc-photo/appeal.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  main div#top div#content03 div.top div.appeal h3 {
+    padding: 0 80px;
+  }
+  main div#top div#content03 div.top div.appeal p {
+    padding: 0 80px;
+  }
+  main div#top div#content03 div.top div.works {
+    width: 50%;
+    aspect-ratio: 642/345;
+    background-image: url(../photos/pc-photo/works.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  main div#top div#content03 div.top img {
+    display: block;
+    width: 50%;
+  }
+  main div#top div#content04 {
+    width: 100%;
+  }
+  main div#top div#content04 div.back-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    aspect-ratio: 1280/234;
+    background-image: url("../photos/pc-photo/menu.png");
+  }
+  main div#top div#content04 div.back-menu h2 {
+    width: 100%;
+    text-align: center;
+  }
+  main div#top div#content04 div.slideshow02 {
+    display: flex;
+    justify-content: space-around;
+    min-width: 1040px;
+    padding: 0 100px;
+    margin: 0 auto;
+  }
+  main div#top div#content04 div.slideshow02 article {
+    width: 210px;
+    margin: 0 25px;
+  }
+  main div#top div#content04 div.slideshow02 article img {
+    width: 100%;
+    display: block;
+  }
+  main div#top div#content04 div.slideshow02 article div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+    background-color: #D9D9D9;
+    padding: 25px;
+  }
+  main div#top div#contact-in div.contact-back {
+    width: 100%;
+    aspect-ratio: 1280/189;
+    background-image: url("../photos/pc-photo/contact.png");
+    background-position: center;
+    background-size: cover;
+  }
+  main div#top div#contact-in div.contact-back h2 {
+    width: 100%;
+    line-height: 15vw;
+    text-align: center;
+  }
+  main div#top div#contact-in form {
+    max-width: 980px;
+    width: calc(100vw - 300px);
+    margin: 0 auto;
+    background-color: #D9D9D9;
+    padding: 25px 50px;
+  }
+  main div#top div#contact-in form p {
+    text-align: center;
+  }
+  main div#top div#contact-in form label {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    margin: 25px 0;
+  }
+  main div#top div#contact-in form label h3 {
+    width: 30%;
+    text-align: left;
+  }
+  main div#top div#contact-in form label input {
+    width: 70%;
+    height: 40px;
+    background-color: #f3f3f3;
+  }
+  main div#top div#contact-in form label textarea {
+    width: 70%;
+    height: 120px;
+    background-color: #f3f3f3;
+  }
+  main div#top div#contact-in form button {
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f3f3f3;
+    margin: 25px auto 0;
+  }
+  main div#top div#profile div.profile-back {
+    width: 100%;
+    aspect-ratio: 1280/280;
+    background-image: url("../photos/pc-photo/profile.png");
+    background-position: center;
+    background-size: cover;
+  }
+}
+/*# sourceMappingURL=style.css.map */

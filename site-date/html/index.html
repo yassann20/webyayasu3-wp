@@ -5,175 +5,391 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/sanitize.css">
+    <!--slick.css-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <!--/slick.css-->
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 
 <body>
+    <div id="particles-js">
+
+    </div>
     <!--ヘッダーコンテンツ-->
     <header>
-        <div id="top">
-            <div id="slideshow">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <h1></h1>
         <!--メニューコンテンツ-->
-        <div id="menu">
-            <ul id="menu">
-                <li>トップ</li>
-                <li>事業内容</li>
-                <li>新着情報</li>
-                <li>お問い合わせ</li>
+        <nav id="Menu">
+            <ul>
+                <li>
+                    <a href="">トップ</a></li>
+                <li>
+                    <a href="">事業内容</a></li>
+                <li>
+                    <a href="">新着情報</a></li>
+                <li>
+                    <a href="">お問い合わせ</a></li>
             </ul>
-        </div>
+        </nav>
         <!--/メニューコンテンツ-->
+        <h1></h1>
     </header>
     <!--/ヘッダーコンテンツ-->
     <main>
         <div id="top">
             <!-- トップページのメインコンテンツ部分-->
             <!--トップスライドショー-->
-            <div id="content01">
+            <div id="content01" class="position">
                 <div>
                     <h2>事業内容</h2>
                     <p>Business details</p>
                     <h3>制作から保守まで幅広い案件に対応可能です</h3>
-
                 </div>
             </div>
             <!--事業内容コンテンツ-->
-            <div id="content02">
-                <!--事業内容１つ目-->
-                <li>
-                    <div class="rhombus">
-                        <h2></h2>
-                    </div>
-                    <div>
-                        <p></p>
-                    </div>
-                    <div>
-                        <a href="">詳細</a>
-                    </div>
-                </li>
-                <!--事業内容２つ目-->
-                <li>
-                    <div class="rhombus">
-                        <h2></h2>
-                    </div>
-                    <div>
-                        <p></p>
-                    </div>
-                    <div>
-                        <a href="">詳細</a>
-                    </div>
-                </li>
-                <!--事業内容３つ目-->
-                <li>
-                    <div class="rhombus">
-                        <h2></h2>
-                    </div>
-                    <div>
-                        <p></p>
-                    </div>
-                    <div>
-                        <a href="">詳細</a>
-                    </div>
-                </li>
+            <div id="content02" class="fadein position">
+                <ul>
+                    <!--事業内容１つ目-->
+                    <li>
+                        <div class="c2fadein">
+                            <div class="rhombus">
+                                <h2>コーディング</h2>
+                            </div>
+                            <div class="content codding">
+                                <div class="rgba">
+                                <p>ウェブサイトやLPのコーディング
+                                    業務を請け負っています。
+                                    与えられた、デザインを忠実に再
+                                    現し納期もスピーディに納品しま
+                                    す。</p>
+                                    </div>
+                            </div>
+                            <a href="">詳細</a>
+                        </div>
+                    </li>
+                    <!--事業内容２つ目-->
+                    <li>
+                        <div class="c2fadein">
+                            <div class="rhombus">
+                                <h2>WP制作</h2>
+                            </div>
+                            <div class="content wp">
+                                <div class="rgba">
+                                <p>wordpressのカスタマイズや保守。
+                                    コーディングしたデータを元にオリジナルテーマの作成も行っています。</p>
+                                    </div>
+                            </div>
+                            <a href="">詳細</a>
+                        </div>
+                    </li>
+                    <!--事業内容３つ目-->
+                    <li>
+                        <div class="c2fadein">
+                            <div class="rhombus">
+                                <h2>保守・運営</h2>
+                            </div>
+                            <div class="content maintenance">
+                                <div class="rgba">
+                                <p>既存のサイトの保守・運営業務を
+                                    行っています。サイトのデザイン
+                                    変更に伴うソースコード改修や、
+                                    ブログ記事の更新などを行ってい
+                                    ます。</p>
+                                    </div>
+                            </div>
+                            <a href="">詳細</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <!--2つの魅力コンテンツ-->
-            <div id="content03">
+            <div id="content03" class="position">
                 <div class="rhombus">
-                    <h2></h2>
+                    <h2>2つの魅力</h2>
                 </div>
                 <div class="top">
-                    <div>
-                        <h3></h3>
-                        <p></p>
-                        <p></p>
+                    <div class="appeal content">
+                        <h3>ご依頼内容を正確に把握</h3>
+                        <p>ウェブ周りに関する案件であれば柔軟に対応可能です。
+                            ・急ぎで制作してほしい
+
+                            ・できるだけ費用を抑えたい
+
+                            ・既存サイトを修正したい
+
+                            など、お客様のご要望に沿えるよう最大限サポート
+                            いたしますので、まずはお気軽にお問い合わせくだ
+                            さい。</p>
                     </div>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h3></h3>
-                        <p></p>
-                        <p></p>
+                    <img class="content" src="../photos/pc-photo/content3-sample.jpg" alt="">
+                    <img class="content2" src="../photos/pc-photo/content3-sample.jpg" alt="">
+                    <div class="works content2">
+                        <h3>ご依頼内容を正確に把握</h3>
+                        <p>ウェブ周りに関する案件であれば柔軟に対応可能です。
+                            ・急ぎで制作してほしい
+
+                            ・できるだけ費用を抑えたい
+
+                            ・既存サイトを修正したい
+
+                            など、お客様のご要望に沿えるよう最大限サポート
+                            いたしますので、まずはお気軽にお問い合わせくだ
+                            さい。</p>
                     </div>
                 </div>
             </div>
             <!--新着情報コンテンツ-->
-            <div id="content04">
-                <div>
-                    <h2></h2>
+            <div id="content04" class="position">
+                <div class="back-menu">
+                    <div class="rhombus">
+                    <h2>新着情報</h2>
                 </div>
-                <div class="slideshow02"></div>
+                </div>
+                <div class="slideshow02">
+                    <article>
+                        <img src="../photos/pc-photo/codding.jpg" alt="">
+                        <div class="slide2-content">
+                            <p class="category">カテゴリ</p>
+                            <!--記事カテゴリ名-->
+                            <p class="date">2022/11/23</p>
+                            <!--更新日時-->
+                            <p class="text">タイトルタイトルタイトルタイトルタイトルタイトル</p>
+                            <!--記事本文抜粋-->
+                        </div>
+                    </article>
+                    <article>
+                        <img src="../photos/pc-photo/codding.jpg" alt="">
+                        <div class="slide2-content">
+                            <p class="category">カテゴリ</p>
+                            <!--記事カテゴリ名-->
+                            <p class="date">2022/11/23</p>
+                            <!--更新日時-->
+                            <p class="text">タイトルタイトルタイトルタイトルタイトルタイトル</p>
+                            <!--記事本文抜粋-->
+                        </div>
+                    </article>
+                    <article>
+                        <img src="../photos/pc-photo/codding.jpg" alt="">
+                        <div class="slide2-content">
+                            <p class="category">カテゴリ</p>
+                            <!--記事カテゴリ名-->
+                            <p class="date">2022/11/23</p>
+                            <!--更新日時-->
+                            <p class="text">タイトルタイトルタイトルタイトルタイトルタイトル</p>
+                            <!--記事本文抜粋-->
+                        </div>
+                    </article>
+                    <article>
+                        <img src="../photos/pc-photo/codding.jpg" alt="">
+                        <div class="slide2-content">
+                            <p class="category">カテゴリ</p>
+                            <!--記事カテゴリ名-->
+                            <p class="date">2022/11/23</p>
+                            <!--更新日時-->
+                            <p class="text">タイトルタイトルタイトルタイトルタイトルタイトル</p>
+                            <!--記事本文抜粋-->
+                        </div>
+                    </article>
+                    <article>
+                        <img src="../photos/pc-photo/codding.jpg" alt="">
+                        <div class="slide2-content">
+                            <p class="category">カテゴリ</p>
+                            <!--記事カテゴリ名-->
+                            <p class="date">2022/11/23</p>
+                            <!--更新日時-->
+                            <p class="text">タイトルタイトルタイトルタイトルタイトルタイトル</p>
+                            <!--記事本文抜粋-->
+                        </div>
+                    </article>
+                    <article>
+                        <img src="../photos/pc-photo/codding.jpg" alt="">
+                        <div class="slide2-content">
+                            <p class="category">カテゴリ</p>
+                            <!--記事カテゴリ名-->
+                            <p class="date">2022/11/23</p>
+                            <!--更新日時-->
+                            <p class="text">タイトルタイトルタイトルタイトルタイトルタイトル</p>
+                            <!--記事本文抜粋-->
+                        </div>
+                    </article>
+                    <article>
+                        <img src="../photos/pc-photo/codding.jpg" alt="">
+                        <div class="slide2-content">
+                            <p class="category">カテゴリ</p>
+                            <!--記事カテゴリ名-->
+                            <p class="date">2022/11/23</p>
+                            <!--更新日時-->
+                            <p class="text">タイトルタイトルタイトルタイトルタイトルタイトル</p>
+                            <!--記事本文抜粋-->
+                        </div>
+                    </article>
+                    <article>
+                        <img src="../photos/pc-photo/codding.jpg" alt="">
+                        <div class="slide2-content">
+                            <p class="category">カテゴリ</p>
+                            <!--記事カテゴリ名-->
+                            <p class="date">2022/11/23</p>
+                            <!--更新日時-->
+                            <p class="text">タイトルタイトルタイトルタイトルタイトルタイトル</p>
+                            <!--記事本文抜粋-->
+                        </div>
+                    </article>
+                </div>
             </div>
             <!--お問い合わせコンテンツ-->
-            <div id="contact-in">
+            <div id="contact-in" class="position">
+                <div class="contact-back">
+                    <div class="rhombus">
+                    <h2>お問い合わせ</h2>
+                    </div>
+                </div>
                 <form action="">
                     <label for="nam">
-                        <h3></h3>
+                        <h3>お名前</h3>
                         <input type="text" name="nam">
                     </label>
                     <label for="kana">
-                        <h3></h3>
+                        <h3>おなまえ</h3>
                         <input type="text" name="kana">
                     </label>
                     <label for="email">
-                        <h3></h3>
+                        <h3>メールアドレス</h3>
                         <input type="email" name="email">
                     </label>
                     <label for="subject">
-                        <h3></h3>
+                        <h3>件名</h3>
                         <input type="text" name="subject">
                     </label>
                     <label for="text">
-                        <h3></h3>
+                        <h3>詳細内容</h3>
                         <textarea name="" id="" cols="30" rows="10"></textarea>
                     </label>
+                    <p>※いたずら防止のためIPアドレスを記録しています。</p>
                     <button type="submit">送信</button>
                 </form>
             </div>
             <!--プロフィールコンテンツ-->
-            <div id="profile">
-                <div>
-                    <h2>プロフィール</h2>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <p></p>
-                        <h3></h3>
-                        <p></p>
+            <div class="profile-container position">
+                <div id="profile">
+                    <div class="profile-back">
+                        <div class="rhombus">
+                        <h2>プロフィール</h2>
+                        </div>
                     </div>
+                    <div class="profile-inner">
+                        <img class="profile-img" src="../photos/pc-photo/profile-my.jpg" alt="">
+                        <h3><ruby class="name">安<rt>やす</rt>崎<rt>ざき</rt>&emsp;海<rt>&nbsp;&emsp;かい</rt>星<rt>せい</rt></ruby>
+                        </h3>
+                        <div class="profile-text">
+                            <p>札幌市を中心にフロントエンドエンジニアとして活動しています
+                                ウェブサイト、LP などのコーディングやwordpressのオリジナル
+                                テーマの作成等幅広い案件に対応できます。</p>
+                        </div>
+                    </div>
+                    <div class="programming-text">
+                        <h3>スキル</h3>
+                    </div>
+                    <ul>
+                        <li><a href="">
+                                <img src="../photos/pc-photo/html.png" alt="">
+                                <div>
+                                    <img src="../photos/images/star_05.png" alt="">
+                                    <h2>HTML</h2>
+                                    <p>HTMLは幅広いタグを扱うことができ、それぞれの目的に合ったタグを使用することでSEO対策にも貢献させることができます。</p>
+                                </div>
+                            </a></li>
+                        <li><a href="">
+                                <img src="../photos/pc-photo/css.png" alt="">
+                                <div>
+                                    <img src="../photos/images/star_05.png" alt="">
+                                    <h2>CSS</h2>
+                                    <p>最近では素のCSSだけではなく、より汎用性に富んだSASS(SCSS形式)を使用しコーディングまで対応することができます。</p>
+                                </div>
+                            </a></li>
+                        <li><a href="">
+                                <img src="../photos/pc-photo/javascript.png" alt="">
+                                <div>
+                                    <img src="../photos/images/star_05.png" alt="">
+                                    <h2>javascript</h2>
+                                    <p>javascript及びjqueryについては主に動きを加える場合に使用しており、背景アニメーションのような高度な幾何学模様を制作することも可能です。</p>
+                                </div>
+                            </a></li>
+                        <li><a href="">
+                                <img src="../photos/pc-photo/php.png" alt="">
+                                <div>
+                                    <img src="../photos/images/star_04.png" alt="">
+                                    <h2>php</h2>
+                                    <p>お問い合わせページのフルスクラッチ開発、wordpress内でのループの作成やカスタマイザーの開発等幅広く対応可能です。</p>
+                                </div>
+                            </a></li>
+                        <li><a href="">
+                                <img src="../photos/pc-photo/wordpress.png" alt="">
+                                <div>
+                                    <img src="../photos/images/star_04.png" alt="">
+                                    <h2>wordpress</h2>
+                                    <p>wordpressでは既存のテンプレートを使用したサイト構築から、テーマカスタマイザーを使用した自作テンプレート制作まで幅広く対応可能です。</p>
+                                </div>
+                            </a></li>
+                        <li><a href="">
+                                <img src="../photos/pc-photo/mysql.png" alt="">
+                                <div>
+                                    <img src="../photos/images/star_04.png" alt="">
+                                    <h2>mysql</h2>
+                                    <p>mysqlではphpと連携し、商品管理サイトの作成やwordpress回りのを構築する際に使用しています。</p>
+                                </div>
+                            </a></li>
+                        <li><a href="">
+                                <img src="../photos/pc-photo/git.png" alt="">
+                                <div>
+                                    <img src="../photos/images/star_05.png" alt="">
+                                    <h2>git</h2>
+                                    <p>ソースコードの管理はgitを使用していますのでチームでの開発を行う案件にも対応可能です。</p>
+                                </div>
+                            </a></li>
+                        <li><a href="">
+                                <img src="../photos/pc-photo/photoshop.png" alt="">
+                                <div>
+                                    <img src="../photos/images/star_05.png" alt="">
+                                    <h2>photoshop</h2>
+                                    <p>デザインデータの書き出し等を主に使用しています。また撮影した画像などの加工処理等も行えます。</p>
+                                </div>
+                            </a></li>
+                        <li><a href="">
+                                <img src="../photos/pc-photo/illustrator.png" alt="">
+                                <div>
+                                    <img src="../photos/images/star_04.png" alt="">
+                                    <h2>illustrator</h2>
+                                    <p>主にイラストやロゴの制作に使用しており、基本的な操作をすることが可能です。</p>
+                                </div>
+                            </a></li>
+                        <li><a href="">
+                                <img src="../photos/pc-photo/xd.png" alt="">
+                                <div>
+                                    <img src="../photos/images/star_05.png" alt="">
+                                    <h2>XD</h2>
+                                    <p>主にデザインを書き出す際に使用するツールでphotoshopの次くらいの頻度で書き出すことが多いです。またこれ以外のデザインカンプの共有法としてはfigmaからの
+                                    </p>
+                                </div>
+                            </a></li>
+                    </ul>
                 </div>
-                <h3></h3>
-                <p></p>
-                <ul>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                </ul>
             </div>
             <!-- ここまで -->
         </div>
     </main>
-    <footer>
-
+    <footer class="position">
+        <p>@ kaisei yasuzaki</p>
     </footer>
+    <!--javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/action.js"></script>
+    <!-- particles.js CDN -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="../js/particles.js"></script>
+    <!--/javascript-->
 </body>
 
 </html>
