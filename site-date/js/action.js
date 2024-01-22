@@ -1,11 +1,15 @@
 //breakpointの設定
-let pc = 1080;
-let tabend = 1079;
+let pc = 1240;
+let tabend = 1239;
 let tab = 768;
 let spend = 767;
 let sp = 0;
 
 jQuery(function () {
+    jQuery('.menubar').on('click', function(){
+        jQuery('.menubar span').toggleClass('active');
+        jQuery('#Menu').toggleClass('active');
+    });
     //PC幅(1080px以降)の処理
     if (window.matchMedia('(min-width: '+pc+'px)').matches) {
         jQuery(window).on("load scroll resize", function () {

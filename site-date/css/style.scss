@@ -1,6 +1,6 @@
 //breakpointの設定
-$pc: 1080px;
-$tabend: 1079px;
+$pc: 1240px;
+$tabend: 1239px;
 $tab: 768px;
 $spend: 767px;
 $sp: 0;
@@ -41,7 +41,7 @@ body div.rhombus {
     justify-content: center;
     align-items: center;
     align-content: center;
-    border: solid 10px #f9f9f9;
+    border: solid 5px #f9f9f9;
     background-color: #A3A6FF;
     transform: rotate(-45deg);
     z-index: 2;
@@ -80,33 +80,232 @@ header {
     /*============================
         #menu
         ============================*/
-    nav#Menu {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 100;
+    @include pc {
 
-        /*============================
+        //pcの場合のナビメニューは下記スタイル
+        nav#Menu {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+
+            /*============================
         #menu
         ============================*/
-        ul {
+            ul {
+                width: 100%;
+                height: 110px;
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                flex-wrap: nowrap;
+                //グラデーションを加える
+                background: linear-gradient(to bottom, #ffffff, transparent);
+
+                li {
+                    width: 200px;
+                    height: 80px;
+                    font-size: 24px;
+                    line-height: 80px;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    @include tab {
+
+        //pcの場合のナビメニューは下記スタイル
+        nav#Menu {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 100;
+            transform: translateY(-100vh);
+            transition: all .3s;
+            &.active{
+                transform: translateY(0);
+            }
+            
+                /*============================
+        #menu
+        ============================*/
+                ul {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    list-style: none;
+                    flex-wrap: wrap;
+                    //グラデーションを加える
+                    background: #ffffff;
+                    padding: 110px 0;
+
+                    li {
+                        width: 100%;
+                        height: 50px;
+                        font-size: 24px;
+                        line-height: 50px;
+                        text-align: center;
+                        font-weight: bold;
+                        z-index: 101;
+                    }
+                }
+            
+        }
+    }
+
+     @include sp {
+
+        //pcの場合のナビメニューは下記スタイル
+        nav#Menu {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 100;
+            transform: translateY(-100vh);
+            transition: all .3s;
+            &.active{
+                transform: translateY(0);
+            }
+            
+                /*============================
+        #menu
+        ============================*/
+                ul {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    list-style: none;
+                    flex-wrap: wrap;
+                    //グラデーションを加える
+                    background: #ffffff;
+                    padding: 110px 0;
+
+                    li {
+                        width: 100%;
+                        height: 50px;
+                        font-size: 24px;
+                        line-height: 50px;
+                        text-align: center;
+                        font-weight: bold;
+                        z-index: 101;
+                    }
+                }
+            
+        }
+    }
+
+    /*============================
+        #menubar
+        ============================*/
+    @include pc {
+        div.menubar {
+            display: none;
+        }
+    }
+
+    @include tab {
+        div.menubar {
+            position: absolute;
+            top: 0;
+            right: 0;
             width: 100%;
             height: 110px;
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            flex-wrap: nowrap;
-            //グラデーションを加える
+            z-index: 100;
             background: linear-gradient(to bottom, #ffffff, transparent);
+            span {
+                position: absolute;
+                right: 22.5px;
+                width: 40px;
+                height: 5px;
+                background-color: black;
+                border-radius: 2.5px;
+                transition: all .3s;
 
-            li {
-                width: 200px;
-                height: 80px;
-                font-size: 24px;
-                line-height: 80px;
-                text-align: center;
-                font-weight: bold;
+                &:nth-of-type(1) {
+                    top: 27.5px;
+                }
+
+                &:nth-of-type(2) {
+                    top: 37.5px;
+                }
+
+                &:nth-of-type(3) {
+                    top: 47.5px;
+                }
+
+                &.active:nth-child(1) {
+                    top: 37.5px;
+                    transform: rotate(135deg);
+                }
+
+                &.active:nth-child(2) {
+                    display: none;
+                }
+
+                &.active:nth-child(3) {
+                    top: 37.5px;
+                    transform: rotate(-135deg)
+                }
+            }
+        }
+    }
+
+    @include sp {
+        div.menubar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 110px;
+            z-index: 100;
+            background: linear-gradient(to bottom, #ffffff, transparent);
+            span {
+                position: absolute;
+                right: 22.5px;
+                width: 40px;
+                height: 5px;
+                background-color: black;
+                border-radius: 2.5px;
+                transition: all .3s;
+
+                &:nth-of-type(1) {
+                    top: 27.5px;
+                }
+
+                &:nth-of-type(2) {
+                    top: 37.5px;
+                }
+
+                &:nth-of-type(3) {
+                    top: 47.5px;
+                }
+
+                &.active:nth-child(1) {
+                    top: 37.5px;
+                    transform: rotate(135deg);
+                }
+
+                &.active:nth-child(2) {
+                    display: none;
+                }
+
+                &.active:nth-child(3) {
+                    top: 37.5px;
+                    transform: rotate(-135deg)
+                }
             }
         }
     }
@@ -223,7 +422,9 @@ main {
                             transform: translateY(30px);
                             transition: all .5s;
                             opacity: 0;
-                            div.rhombus{//個別のrhombusスタイル
+
+                            div.rhombus {
+                                //個別のrhombusスタイル
                                 width: 140px;
                                 height: 140px;
                             }
@@ -244,19 +445,22 @@ main {
                                 &.maintenance {
                                     background-image: url(../photos/pc-photo/maintenance.jpg);
                                 }
-                                div.rgba{
-                                     display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                background-size: cover;
-                                background-position: center;
+
+                                div.rgba {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-size: cover;
+                                    background-position: center;
                                     width: 100%;
                                     height: 100%;
-                                    background-color: rgba(50, 50, 50, 0.6);;
-                                p {
-                                    margin: 0 45px;
+                                    background-color: rgba(50, 50, 50, 0.6);
+                                    ;
+
+                                    p {
+                                        margin: 0 45px;
+                                    }
                                 }
-                            }
                             }
 
                             a {
@@ -279,12 +483,14 @@ main {
             div#content03 {
                 position: relative;
 
-                div.rhombus {//個別のrhombusスタイル
+                div.rhombus {
+                    //個別のrhombusスタイル
                     position: absolute;
                     top: calc(50% - 60px);
                     left: calc(50% - 60px);
                     width: 120px;
                     height: 120px;
+
                     h2 {
                         width: 100%;
                         height: 26px;
@@ -369,19 +575,21 @@ main {
         ============================*/
             div#content04 {
                 width: 100%;
-                div.back-menu{
+
+                div.back-menu {
                     margin: 80px auto 50px;
-                
-                div.rhombus{//個別のrhombusスタイル
-                    width: 120px;
-                    height: 120px;
-                    margin: 0 auto;
+
+                    div.rhombus {
+                        //個別のrhombusスタイル
+                        width: 120px;
+                        height: 120px;
+                        margin: 0 auto;
+                    }
                 }
-                }
+
                 div.slideshow02 {
-                    display: flex;
-                    justify-content: space-around;
-                    min-width: 1040px;
+                    display: block;
+                    width: 1240px;
                     padding: 0 100px;
                     margin: 0 auto;
                     /*--スライドインで表示--*/
@@ -389,8 +597,19 @@ main {
                     transition: all .5s;
                     opacity: 0;
 
-                    article {
-                        width: 210px;
+                    .slick-prev {
+                        left: 25px;
+                    }
+
+                    .slick-next {}
+
+
+                    .slick-dots {
+                        left: 0;
+                    }
+
+                    div.news-content {
+                        width: 210px !important;
                         margin: 0 25px;
 
                         img {
@@ -427,10 +646,12 @@ main {
 
                 div.contact-back {
                     margin: 80px auto 50px;
-                    div.rhombus{//個別のrhombusスタイル
-                    width: 140px;
-                    height: 140px;
-                    margin: 0 auto;
+
+                    div.rhombus {
+                        //個別のrhombusスタイル
+                        width: 140px;
+                        height: 140px;
+                        margin: 0 auto;
                     }
                 }
 
@@ -500,40 +721,44 @@ main {
 
                     div.profile-back {
                         margin: 80px auto 50px;
-                       div.rhombus{//個別のrhombusスタイル
-                    width: 140px;
-                    height: 140px;
-                    margin: 0 auto;
-                    }
+
+                        div.rhombus {
+                            //個別のrhombusスタイル
+                            width: 140px;
+                            height: 140px;
+                            margin: 0 auto;
+                        }
                     }
 
                     div.profile-inner {
                         width: 100%;
                         display: flex;
                         flex-wrap: wrap;
-                        justify-content: space-around;
+                        justify-content: center;
                         align-items: center;
                         align-content: center;
 
                         img.profile-img {
-                            width: 30%;
-                            aspect-ratio: 223/141;
+                            width: 20%;
+                            aspect-ratio: 400/400;
+                        }
+
+                        h3 {
+                            width: 40%;
+                            font-size: 24px;
+                            text-align: center;
+
+                            rt {
+                                font-size: 50%;
+                                font-weight: lighter;
+                            }
                         }
 
                         div.profile-text {
-                            width: 70%;
-                            padding: 0 40px;
+                            width: calc(60% + 80px);
+                            padding: 60px 40px 0;
 
-                            h3 {
-                                width: 100%;
-                                font-size: 24px;
-                                padding: 0 0 40px;
 
-                                rt {
-                                    font-size: 50%;
-                                    font-weight: lighter;
-                                }
-                            }
 
                             p {
                                 width: 100%;
@@ -541,15 +766,14 @@ main {
                         }
                     }
 
-                    div.programming-text {
-                        h3 {
-                            font-size: 20px;
-                            padding: 40px 0 20px;
-                        }
+                    div.programming-back {
+                        margin: 60px auto 40px;
 
-                        p {
-                            width: 100%;
-                            padding: 0 200px 20px;
+                        div.rhombus {
+                            //個別のrhombusスタイル
+                            width: 120px;
+                            height: 120px;
+                            margin: 0 auto;
                         }
                     }
 
@@ -799,7 +1023,7 @@ main {
                     justify-content: center;
 
                     li {
-                        width: 340px;
+                        width: 400px;
                         margin: 0 25px;
                         list-style: none;
 
@@ -807,8 +1031,7 @@ main {
                             aspect-ratio: 450/319;
                             background-size: cover;
                             background-position: center;
-                            margin-top: 30px;
-                            color: #f9f9f9;
+                            margin-top: 100px;
                             transform: translateY(30px);
                             transition: all .5s;
                             opacity: 0;
@@ -826,14 +1049,17 @@ main {
                             }
 
                             div.rhombus {
+                                top: -60px;
+                                left: calc(50% - 60px);
+                                width: 120px;
+                                height: 120px;
 
                                 h2 {
                                     width: 100%;
                                     height: 60px;
-                                    line-height: 20px;
+                                    line-height: 60px;
                                     font-size: 18px;
                                     text-align: center;
-                                    padding: 25px 0 15px;
                                 }
                             }
 
@@ -841,6 +1067,7 @@ main {
 
                                 p {
                                     margin: 0 30px;
+                                    color: #f9f9f9;
                                 }
                             }
 
@@ -907,6 +1134,7 @@ main {
                         flex-wrap: wrap;
                         justify-content: center;
                         align-items: center;
+                        align-content: center;
                         order: 2;
                         width: 420px;
                         aspect-ratio: 420/220;
@@ -919,7 +1147,7 @@ main {
                         opacity: 0;
 
                         h3 {
-                            padding: 0 20px;
+                            padding: 0 20px 20px;
                         }
 
                         p {
@@ -932,6 +1160,7 @@ main {
                         flex-wrap: wrap;
                         justify-content: center;
                         align-items: center;
+                        align-content: center;
                         order: 4;
                         width: 420px;
                         aspect-ratio: 420/220;
@@ -944,7 +1173,7 @@ main {
                         opacity: 0;
 
                         h3 {
-                            padding: 0 20px;
+                            padding: 0 20px 20px;
                         }
 
                         p {
@@ -982,23 +1211,22 @@ main {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    align-content: center;
-                    width: 100%;
-                    aspect-ratio: 1280/234;
-                    background-image: url("../photos/pc-photo/menu.png");
-                    background-size: cover;
-                    background-position: center;
+                    width: 100px;
+                    height: 141px;
+                    margin: 40px auto 0;
 
-                    h2 {
-                        width: 100%;
-                        text-align: center;
+                    div.rhombus {
+                        width: 100px;
+                        height: 100px;
+
+                        h2 {
+                            width: 100%;
+                            text-align: center;
+                        }
                     }
                 }
 
                 div.slideshow02 {
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
                     width: 660px;
                     padding: 0;
                     margin: 0 auto;
@@ -1009,36 +1237,35 @@ main {
 
                     div {
                         div.slick-slide {
-                            width: 330px;
-
-                            div {
-                                width: 100% !important;
+                            div.news-content {
+                                width: 300px;
                                 padding: 20px 15px;
 
-                                article {
+                                img {
                                     width: 100%;
+                                    display: block;
+                                }
 
+                                div.slide2-content {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    width: 100%;
+                                    min-height: 150px;
+                                    height: auto;
+                                    background-color: #D9D9D9;
+                                    padding: 25px;
+                                    margin: 0;
 
-                                    img {
+                                    p.category {
                                         width: 100%;
-                                        display: block;
                                     }
 
-                                    div.slide2-content {
-                                        display: flex;
-                                        flex-wrap: wrap;
+                                    p.date {
                                         width: 100%;
-                                        min-height: 150px;
-                                        height: auto;
-                                        background-color: #D9D9D9;
-                                        padding: 25px;
-                                        margin: 0;
+                                    }
 
-                                        p.category {}
-
-                                        p.date {}
-
-                                        p.text {}
+                                    p.text {
+                                        width: 100%;
                                     }
                                 }
                             }
@@ -1056,16 +1283,22 @@ main {
                 opacity: 0;
 
                 div.contact-back {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 100%;
-                    aspect-ratio: 1280/189;
-                    background-image: url("../photos/pc-photo/contact.png");
-                    background-position: center;
-                    background-size: cover;
+                    height: 141px;
+                    margin: 60px auto 20px;
 
-                    h2 {
-                        width: 100%;
-                        line-height: 15vw;
-                        text-align: center;
+                    div.rhombus {
+                        width: 100px;
+                        height: 100px;
+                        margin: 0 auto;
+
+                        h2 {
+                            width: 100%;
+                            text-align: center;
+                        }
                     }
                 }
 
@@ -1138,18 +1371,20 @@ main {
                     margin: 0 auto;
 
                     div.profile-back {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
                         width: 100%;
-                        aspect-ratio: 1280/280;
-                        background-image: url("../photos/pc-photo/profile.png");
-                        background-position: center;
-                        background-size: cover;
+                        height: 170px;
+                        margin: 40px 0 20px;
 
-                        h2 {
-                            width: 100%;
-                            text-align: center;
+                        div.rhombus {
+                            width: 120px;
+                            height: 120px;
+                            margin: 0 auto;
+
+                            h2 {
+                                width: 100%;
+                                text-align: center;
+                                font-size: 18px;
+                            }
                         }
                     }
 
@@ -1161,9 +1396,9 @@ main {
                         align-items: center;
                         align-content: center;
 
-                        img.profile-img {
-                            width: 300px;
-                            aspect-ratio: 223/141;
+                        img.profile-img01 {
+                            width: 200px;
+                            aspect-ratio: 400/400;
                         }
 
                         h3 {
@@ -1189,10 +1424,19 @@ main {
                         }
                     }
 
-                    div.programming-text {
-                        h3 {
-                            font-size: 20px;
-                            padding: 40px 0 20px;
+                    div.programming-back {
+                        height: 170px;
+                        margin: 40px auto 20px;
+
+                        div.rhombus {
+                            width: 120px;
+                            height: 120px;
+                            margin: 0 auto;
+
+                            h2 {
+                                width: 100%;
+                                text-align: center;
+                            }
                         }
 
                         p {
@@ -1211,16 +1455,48 @@ main {
                         margin: 0 auto;
 
                         li {
-                            width: 18%;
+                            width: 100%;
                             list-style: none;
 
                             a {
-                                display: block;
+                                display: flex;
+                                flex-wrap: nowrap;
+                                justify-content: space-between;
+                                align-content: center;
+                                align-items: center;
                                 width: 100%;
+                                padding: 10px 0;
 
                                 img {
                                     display: block;
-                                    width: 100%;
+                                    width: 20%;
+                                }
+
+                                div {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: center;
+                                    align-content: center;
+                                    align-items: center;
+                                    width: 80%;
+
+                                    img {
+                                        display: block;
+                                        width: 150px;
+                                    }
+
+                                    h2 {
+                                        width: 100%;
+                                        padding: 10px 40px;
+                                        font-size: 18px;
+                                        text-align: center;
+                                    }
+
+                                    p {
+                                        width: 100%;
+                                        font-size: 16px;
+                                        padding: 0 40px;
+                                    }
                                 }
                             }
                         }
@@ -1422,10 +1698,10 @@ main {
                             background-size: cover;
                             background-position: center;
                             margin-top: 30px;
-                            color: #f9f9f9;
                             transform: translateY(30px);
                             transition: all .5s;
                             opacity: 0;
+                            margin: 125px auto 20px;
 
                             &:nth-of-type(1n) {
                                 background-image: url(../photos/pc-photo/codding.jpg)
@@ -1440,21 +1716,27 @@ main {
                             }
 
                             div.rhombus {
+                                position: relative;
+                                top: -95px;
+                                left: calc(50% - 65px);
+                                width: 120px;
+                                height: 120px;
 
                                 h2 {
                                     width: 100%;
-                                    height: 60px;
-                                    line-height: 20px;
-                                    font-size: 18px;
+                                    height: 170px;
+                                    line-height: 170px;
+                                    font-size: 16px;
                                     text-align: center;
-                                    padding: 25px 0 15px;
                                 }
                             }
 
                             div.content {
+                                margin-top: -45px;
 
                                 p {
                                     font-size: 14px;
+                                    color: #f9f9f9;
                                     margin: 0 10px;
                                 }
                             }
@@ -1603,14 +1885,17 @@ main {
                     align-items: center;
                     align-content: center;
                     width: 100%;
-                    aspect-ratio: 1280/234;
-                    background-image: url("../photos/pc-photo/menu.png");
-                    background-size: cover;
-                    background-position: center;
+                    height: 140px;
+                    margin: 40px auto 20px;
 
-                    h2 {
-                        width: 100%;
-                        text-align: center;
+                    div.rhombus {
+                        width: 100px;
+                        height: 100px;
+
+                        h2 {
+                            width: 100%;
+                            text-align: center;
+                        }
                     }
                 }
 
@@ -1627,7 +1912,7 @@ main {
                     opacity: 0;
                     padding: 0 40px;
 
-                    article {
+                    div.news-content {
                         display: flex !important;
                         flex-wrap: wrap;
                         align-items: center;
@@ -1676,16 +1961,24 @@ main {
                 opacity: 0;
 
                 div.contact-back {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
                     width: 100%;
-                    aspect-ratio: 1280/189;
-                    background-image: url("../photos/pc-photo/contact.png");
-                    background-position: center;
-                    background-size: cover;
+                    height: 170px;
+                    margin: 40px auto 20px;
 
-                    h2 {
-                        width: 100%;
-                        line-height: 15vw;
-                        text-align: center;
+                    div.rhombus {
+                        width: 120px;
+                        height: 120px;
+                        margin: 0 auto;
+
+                        h2 {
+                            width: 100%;
+                            text-align: center;
+                            font-size: 16px;
+                        }
                     }
                 }
 
@@ -1761,14 +2054,19 @@ main {
                         justify-content: center;
                         align-items: center;
                         width: 100%;
-                        aspect-ratio: 1280/280;
-                        background-image: url("../photos/pc-photo/profile.png");
-                        background-position: center;
-                        background-size: cover;
+                        height: 170px;
+                        margin: 40px auto 20px;
 
-                        h2 {
-                            width: 100%;
-                            text-align: center;
+                        div.rhombus {
+                            width: 120px;
+                            height: 120px;
+                            margin: 0 auto;
+
+                            h2 {
+                                width: 100%;
+                                text-align: center;
+                                font-size: 16px;
+                            }
                         }
                     }
 
@@ -1780,9 +2078,9 @@ main {
                         align-items: center;
                         align-content: center;
 
-                        img.profile-img {
+                        img.profile-img01 {
                             width: 250px;
-                            aspect-ratio: 223/141;
+                            aspect-ratio: 400/400;
                         }
 
                         h3 {
@@ -1808,15 +2106,21 @@ main {
                         }
                     }
 
-                    div.programming-text {
-                        h3 {
-                            font-size: 20px;
-                            padding: 40px 0 20px;
-                        }
+                    div.programming-back {
+                        width: 100%;
+                        height: 140px;
+                        margin: 40px auto 20px;
 
-                        p {
-                            width: 100%;
-                            padding: 0 0 20px;
+                        div.rhombus {
+                            width: 100px;
+                            height: 100px;
+                            margin: 0 auto;
+
+                            h2 {
+                                width: 100%;
+                                text-align: center;
+                                font-size: 16px;
+                            }
                         }
                     }
 
@@ -1830,16 +2134,48 @@ main {
                         margin: 0 auto;
 
                         li {
-                            width: 18%;
+                            width: 100%;
                             list-style: none;
 
                             a {
-                                display: block;
+                                display: flex;
+                                flex-wrap: nowrap;
+                                justify-content: space-between;
+                                align-content: center;
+                                align-items: center;
                                 width: 100%;
+                                padding: 10px 0;
 
                                 img {
                                     display: block;
-                                    width: 100%;
+                                    width: 20%;
+                                }
+
+                                div {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: center;
+                                    align-content: center;
+                                    align-items: center;
+                                    width: 80%;
+
+                                    img {
+                                        display: block;
+                                        width: 150px;
+                                    }
+
+                                    h2 {
+                                        width: 100%;
+                                        padding: 10px 40px;
+                                        font-size: 18px;
+                                        text-align: center;
+                                    }
+
+                                    p {
+                                        width: 100%;
+                                        font-size: 16px;
+                                        padding: 0 40px;
+                                    }
                                 }
                             }
                         }
@@ -1980,11 +2316,12 @@ main {
 }
 
 footer {
+    position: relative;
     width: 100%;
     height: 40px;
     background-color: #d9d9d9;
     overflow: hidden;
-
+    z-index: 11;
     p {
         width: 100%;
         line-height: 40px;

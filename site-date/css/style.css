@@ -17,7 +17,7 @@ body div.rhombus {
   justify-content: center;
   align-items: center;
   align-content: center;
-  border: solid 10px #f9f9f9;
+  border: solid 5px #f9f9f9;
   background-color: #A3A6FF;
   transform: rotate(-45deg);
   z-index: 2;
@@ -52,35 +52,203 @@ header {
       #menu
       ============================*/
   /*============================
+      #menubar
+      ============================*/
+  /*============================
       #top
       ============================*/
 }
-header nav#Menu {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  /*============================
-  #menu
-  ============================*/
+@media screen and (min-width: 1240px) {
+  header nav#Menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    /*============================
+    #menu
+    ============================*/
+  }
+  header nav#Menu ul {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: nowrap;
+    background: linear-gradient(to bottom, #ffffff, transparent);
+  }
+  header nav#Menu ul li {
+    width: 200px;
+    height: 80px;
+    font-size: 24px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: bold;
+  }
 }
-header nav#Menu ul {
-  width: 100%;
-  height: 110px;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  flex-wrap: nowrap;
-  background: linear-gradient(to bottom, #ffffff, transparent);
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  header nav#Menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    transform: translateY(-100vh);
+    transition: all 0.3s;
+    /*============================
+    #menu
+    ============================*/
+  }
+  header nav#Menu.active {
+    transform: translateY(0);
+  }
+  header nav#Menu ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    background: #ffffff;
+    padding: 110px 0;
+  }
+  header nav#Menu ul li {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 101;
+  }
 }
-header nav#Menu ul li {
-  width: 200px;
-  height: 80px;
-  font-size: 24px;
-  line-height: 80px;
-  text-align: center;
-  font-weight: bold;
+@media screen and (min-width: 0) and (max-width: 767px) {
+  header nav#Menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    transform: translateY(-100vh);
+    transition: all 0.3s;
+    /*============================
+    #menu
+    ============================*/
+  }
+  header nav#Menu.active {
+    transform: translateY(0);
+  }
+  header nav#Menu ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    background: #ffffff;
+    padding: 110px 0;
+  }
+  header nav#Menu ul li {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 101;
+  }
+}
+@media screen and (min-width: 1240px) {
+  header div.menubar {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  header div.menubar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 110px;
+    z-index: 100;
+    background: linear-gradient(to bottom, #ffffff, transparent);
+  }
+  header div.menubar span {
+    position: absolute;
+    right: 22.5px;
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    border-radius: 2.5px;
+    transition: all 0.3s;
+  }
+  header div.menubar span:nth-of-type(1) {
+    top: 27.5px;
+  }
+  header div.menubar span:nth-of-type(2) {
+    top: 37.5px;
+  }
+  header div.menubar span:nth-of-type(3) {
+    top: 47.5px;
+  }
+  header div.menubar span.active:nth-child(1) {
+    top: 37.5px;
+    transform: rotate(135deg);
+  }
+  header div.menubar span.active:nth-child(2) {
+    display: none;
+  }
+  header div.menubar span.active:nth-child(3) {
+    top: 37.5px;
+    transform: rotate(-135deg);
+  }
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  header div.menubar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 110px;
+    z-index: 100;
+    background: linear-gradient(to bottom, #ffffff, transparent);
+  }
+  header div.menubar span {
+    position: absolute;
+    right: 22.5px;
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    border-radius: 2.5px;
+    transition: all 0.3s;
+  }
+  header div.menubar span:nth-of-type(1) {
+    top: 27.5px;
+  }
+  header div.menubar span:nth-of-type(2) {
+    top: 37.5px;
+  }
+  header div.menubar span:nth-of-type(3) {
+    top: 47.5px;
+  }
+  header div.menubar span.active:nth-child(1) {
+    top: 37.5px;
+    transform: rotate(135deg);
+  }
+  header div.menubar span.active:nth-child(2) {
+    display: none;
+  }
+  header div.menubar span.active:nth-child(3) {
+    top: 37.5px;
+    transform: rotate(-135deg);
+  }
 }
 header div#top {
   position: relative;
@@ -112,7 +280,7 @@ main {
       #top
       ============================*/
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1240px) {
   main div#top {
     /*============================
     #content01
@@ -322,9 +490,8 @@ main {
     margin: 0 auto;
   }
   main div#top div#content04 div.slideshow02 {
-    display: flex;
-    justify-content: space-around;
-    min-width: 1040px;
+    display: block;
+    width: 1240px;
     padding: 0 100px;
     margin: 0 auto;
     /*--スライドインで表示--*/
@@ -332,15 +499,21 @@ main {
     transition: all 0.5s;
     opacity: 0;
   }
-  main div#top div#content04 div.slideshow02 article {
-    width: 210px;
+  main div#top div#content04 div.slideshow02 .slick-prev {
+    left: 25px;
+  }
+  main div#top div#content04 div.slideshow02 .slick-dots {
+    left: 0;
+  }
+  main div#top div#content04 div.slideshow02 div.news-content {
+    width: 210px !important;
     margin: 0 25px;
   }
-  main div#top div#content04 div.slideshow02 article img {
+  main div#top div#content04 div.slideshow02 div.news-content img {
     width: 100%;
     display: block;
   }
-  main div#top div#content04 div.slideshow02 article div {
+  main div#top div#content04 div.slideshow02 div.news-content div {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -427,37 +600,37 @@ main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     align-content: center;
   }
   main div#top div.profile-container div#profile div.profile-inner img.profile-img {
-    width: 30%;
-    aspect-ratio: 223/141;
+    width: 20%;
+    aspect-ratio: 400/400;
   }
-  main div#top div.profile-container div#profile div.profile-inner div.profile-text {
-    width: 70%;
-    padding: 0 40px;
-  }
-  main div#top div.profile-container div#profile div.profile-inner div.profile-text h3 {
-    width: 100%;
+  main div#top div.profile-container div#profile div.profile-inner h3 {
+    width: 40%;
     font-size: 24px;
-    padding: 0 0 40px;
+    text-align: center;
   }
-  main div#top div.profile-container div#profile div.profile-inner div.profile-text h3 rt {
+  main div#top div.profile-container div#profile div.profile-inner h3 rt {
     font-size: 50%;
     font-weight: lighter;
+  }
+  main div#top div.profile-container div#profile div.profile-inner div.profile-text {
+    width: calc(60% + 80px);
+    padding: 60px 40px 0;
   }
   main div#top div.profile-container div#profile div.profile-inner div.profile-text p {
     width: 100%;
   }
-  main div#top div.profile-container div#profile div.programming-text h3 {
-    font-size: 20px;
-    padding: 40px 0 20px;
+  main div#top div.profile-container div#profile div.programming-back {
+    margin: 60px auto 40px;
   }
-  main div#top div.profile-container div#profile div.programming-text p {
-    width: 100%;
-    padding: 0 200px 20px;
+  main div#top div.profile-container div#profile div.programming-back div.rhombus {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
   }
   main div#top div.profile-container div#profile ul {
     display: flex;
@@ -611,7 +784,7 @@ main {
     padding: 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1079px) {
+@media screen and (min-width: 768px) and (max-width: 1239px) {
   main div#top {
     /*============================
     #content01
@@ -677,7 +850,7 @@ main {
     justify-content: center;
   }
   main div#top div#content02 ul li {
-    width: 340px;
+    width: 400px;
     margin: 0 25px;
     list-style: none;
   }
@@ -685,8 +858,7 @@ main {
     aspect-ratio: 450/319;
     background-size: cover;
     background-position: center;
-    margin-top: 30px;
-    color: #f9f9f9;
+    margin-top: 100px;
     transform: translateY(30px);
     transition: all 0.5s;
     opacity: 0;
@@ -700,16 +872,22 @@ main {
   main div#top div#content02 ul li div.c2fadein:nth-of-type(3n) {
     background-image: url(../photos/pc-photo/maintenance.jpg);
   }
+  main div#top div#content02 ul li div.c2fadein div.rhombus {
+    top: -60px;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 120px;
+  }
   main div#top div#content02 ul li div.c2fadein div.rhombus h2 {
     width: 100%;
     height: 60px;
-    line-height: 20px;
+    line-height: 60px;
     font-size: 18px;
     text-align: center;
-    padding: 25px 0 15px;
   }
   main div#top div#content02 ul li div.c2fadein div.content p {
     margin: 0 30px;
+    color: #f9f9f9;
   }
   main div#top div#content02 ul li div.c2fadein a {
     display: block;
@@ -764,6 +942,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    align-content: center;
     order: 2;
     width: 420px;
     aspect-ratio: 420/220;
@@ -776,7 +955,7 @@ main {
     opacity: 0;
   }
   main div#top div#content03 div.top div.appeal h3 {
-    padding: 0 20px;
+    padding: 0 20px 20px;
   }
   main div#top div#content03 div.top div.appeal p {
     padding: 0 20px;
@@ -786,6 +965,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    align-content: center;
     order: 4;
     width: 420px;
     aspect-ratio: 420/220;
@@ -798,7 +978,7 @@ main {
     opacity: 0;
   }
   main div#top div#content03 div.top div.works h3 {
-    padding: 0 20px;
+    padding: 0 20px 20px;
   }
   main div#top div#content03 div.top div.works p {
     padding: 0 20px;
@@ -825,21 +1005,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    width: 100%;
-    aspect-ratio: 1280/234;
-    background-image: url("../photos/pc-photo/menu.png");
-    background-size: cover;
-    background-position: center;
+    width: 100px;
+    height: 141px;
+    margin: 40px auto 0;
   }
-  main div#top div#content04 div.back-menu h2 {
+  main div#top div#content04 div.back-menu div.rhombus {
+    width: 100px;
+    height: 100px;
+  }
+  main div#top div#content04 div.back-menu div.rhombus h2 {
     width: 100%;
     text-align: center;
   }
   main div#top div#content04 div.slideshow02 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 660px;
     padding: 0;
     margin: 0 auto;
@@ -848,21 +1026,15 @@ main {
     transition: all 0.5s;
     opacity: 0;
   }
-  main div#top div#content04 div.slideshow02 div div.slick-slide {
-    width: 330px;
-  }
-  main div#top div#content04 div.slideshow02 div div.slick-slide div {
-    width: 100% !important;
+  main div#top div#content04 div.slideshow02 div div.slick-slide div.news-content {
+    width: 300px;
     padding: 20px 15px;
   }
-  main div#top div#content04 div.slideshow02 div div.slick-slide div article {
-    width: 100%;
-  }
-  main div#top div#content04 div.slideshow02 div div.slick-slide div article img {
+  main div#top div#content04 div.slideshow02 div div.slick-slide div.news-content img {
     width: 100%;
     display: block;
   }
-  main div#top div#content04 div.slideshow02 div div.slick-slide div article div.slide2-content {
+  main div#top div#content04 div.slideshow02 div div.slick-slide div.news-content div.slide2-content {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -872,21 +1044,35 @@ main {
     padding: 25px;
     margin: 0;
   }
+  main div#top div#content04 div.slideshow02 div div.slick-slide div.news-content div.slide2-content p.category {
+    width: 100%;
+  }
+  main div#top div#content04 div.slideshow02 div div.slick-slide div.news-content div.slide2-content p.date {
+    width: 100%;
+  }
+  main div#top div#content04 div.slideshow02 div div.slick-slide div.news-content div.slide2-content p.text {
+    width: 100%;
+  }
   main div#top div#contact-in {
     transform: translateX(50%);
     transition: all 0.5s;
     opacity: 0;
   }
   main div#top div#contact-in div.contact-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    aspect-ratio: 1280/189;
-    background-image: url("../photos/pc-photo/contact.png");
-    background-position: center;
-    background-size: cover;
+    height: 141px;
+    margin: 60px auto 20px;
   }
-  main div#top div#contact-in div.contact-back h2 {
+  main div#top div#contact-in div.contact-back div.rhombus {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  main div#top div#contact-in div.contact-back div.rhombus h2 {
     width: 100%;
-    line-height: 15vw;
     text-align: center;
   }
   main div#top div#contact-in form {
@@ -947,18 +1133,19 @@ main {
     margin: 0 auto;
   }
   main div#top div.profile-container div#profile div.profile-back {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    aspect-ratio: 1280/280;
-    background-image: url("../photos/pc-photo/profile.png");
-    background-position: center;
-    background-size: cover;
+    height: 170px;
+    margin: 40px 0 20px;
   }
-  main div#top div.profile-container div#profile div.profile-back h2 {
+  main div#top div.profile-container div#profile div.profile-back div.rhombus {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  main div#top div.profile-container div#profile div.profile-back div.rhombus h2 {
     width: 100%;
     text-align: center;
+    font-size: 18px;
   }
   main div#top div.profile-container div#profile div {
     width: 100%;
@@ -968,9 +1155,9 @@ main {
     align-items: center;
     align-content: center;
   }
-  main div#top div.profile-container div#profile div img.profile-img {
-    width: 300px;
-    aspect-ratio: 223/141;
+  main div#top div.profile-container div#profile div img.profile-img01 {
+    width: 200px;
+    aspect-ratio: 400/400;
   }
   main div#top div.profile-container div#profile div h3 {
     width: 100%;
@@ -989,11 +1176,20 @@ main {
   main div#top div.profile-container div#profile div div.profile-text p {
     width: 100%;
   }
-  main div#top div.profile-container div#profile div.programming-text h3 {
-    font-size: 20px;
-    padding: 40px 0 20px;
+  main div#top div.profile-container div#profile div.programming-back {
+    height: 170px;
+    margin: 40px auto 20px;
   }
-  main div#top div.profile-container div#profile div.programming-text p {
+  main div#top div.profile-container div#profile div.programming-back div.rhombus {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  main div#top div.profile-container div#profile div.programming-back div.rhombus h2 {
+    width: 100%;
+    text-align: center;
+  }
+  main div#top div.profile-container div#profile div.programming-back p {
     width: 100%;
     padding: 0 40px 20px;
   }
@@ -1007,16 +1203,44 @@ main {
     margin: 0 auto;
   }
   main div#top div.profile-container div#profile ul li {
-    width: 18%;
+    width: 100%;
     list-style: none;
   }
   main div#top div.profile-container div#profile ul li a {
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
     width: 100%;
+    padding: 10px 0;
   }
   main div#top div.profile-container div#profile ul li a img {
     display: block;
+    width: 20%;
+  }
+  main div#top div.profile-container div#profile ul li a div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  main div#top div.profile-container div#profile ul li a div img {
+    display: block;
+    width: 150px;
+  }
+  main div#top div.profile-container div#profile ul li a div h2 {
     width: 100%;
+    padding: 10px 40px;
+    font-size: 18px;
+    text-align: center;
+  }
+  main div#top div.profile-container div#profile ul li a div p {
+    width: 100%;
+    font-size: 16px;
+    padding: 0 40px;
   }
   main div#top div.blog {
     display: flex;
@@ -1195,10 +1419,10 @@ main {
     background-size: cover;
     background-position: center;
     margin-top: 30px;
-    color: #f9f9f9;
     transform: translateY(30px);
     transition: all 0.5s;
     opacity: 0;
+    margin: 125px auto 20px;
   }
   main div#top div#content02 ul li div.c2fadein:nth-of-type(1n) {
     background-image: url(../photos/pc-photo/codding.jpg);
@@ -1209,16 +1433,26 @@ main {
   main div#top div#content02 ul li div.c2fadein:nth-of-type(3n) {
     background-image: url(../photos/pc-photo/maintenance.jpg);
   }
+  main div#top div#content02 ul li div.c2fadein div.rhombus {
+    position: relative;
+    top: -95px;
+    left: calc(50% - 65px);
+    width: 120px;
+    height: 120px;
+  }
   main div#top div#content02 ul li div.c2fadein div.rhombus h2 {
     width: 100%;
-    height: 60px;
-    line-height: 20px;
-    font-size: 18px;
+    height: 170px;
+    line-height: 170px;
+    font-size: 16px;
     text-align: center;
-    padding: 25px 0 15px;
+  }
+  main div#top div#content02 ul li div.c2fadein div.content {
+    margin-top: -45px;
   }
   main div#top div#content02 ul li div.c2fadein div.content p {
     font-size: 14px;
+    color: #f9f9f9;
     margin: 0 10px;
   }
   main div#top div#content02 ul li div.c2fadein a {
@@ -1341,12 +1575,14 @@ main {
     align-items: center;
     align-content: center;
     width: 100%;
-    aspect-ratio: 1280/234;
-    background-image: url("../photos/pc-photo/menu.png");
-    background-size: cover;
-    background-position: center;
+    height: 140px;
+    margin: 40px auto 20px;
   }
-  main div#top div#content04 div.back-menu h2 {
+  main div#top div#content04 div.back-menu div.rhombus {
+    width: 100px;
+    height: 100px;
+  }
+  main div#top div#content04 div.back-menu div.rhombus h2 {
     width: 100%;
     text-align: center;
   }
@@ -1363,7 +1599,7 @@ main {
     opacity: 0;
     padding: 0 40px;
   }
-  main div#top div#content04 div.slideshow02 article {
+  main div#top div#content04 div.slideshow02 div.news-content {
     display: flex !important;
     flex-wrap: wrap;
     align-items: center;
@@ -1372,11 +1608,11 @@ main {
     height: auto;
     margin: 20px 0;
   }
-  main div#top div#content04 div.slideshow02 article img {
+  main div#top div#content04 div.slideshow02 div.news-content img {
     width: 100%;
     display: block;
   }
-  main div#top div#content04 div.slideshow02 article div.slide2-content {
+  main div#top div#content04 div.slideshow02 div.news-content div.slide2-content {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -1385,13 +1621,13 @@ main {
     padding: 25px;
     margin: 0;
   }
-  main div#top div#content04 div.slideshow02 article div.slide2-content p.category {
+  main div#top div#content04 div.slideshow02 div.news-content div.slide2-content p.category {
     font-size: 14px;
   }
-  main div#top div#content04 div.slideshow02 article div.slide2-content p.date {
+  main div#top div#content04 div.slideshow02 div.news-content div.slide2-content p.date {
     font-size: 14px;
   }
-  main div#top div#content04 div.slideshow02 article div.slide2-content p.text {
+  main div#top div#content04 div.slideshow02 div.news-content div.slide2-content p.text {
     font-size: 14px;
     padding-top: 10px;
   }
@@ -1401,16 +1637,23 @@ main {
     opacity: 0;
   }
   main div#top div#contact-in div.contact-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     width: 100%;
-    aspect-ratio: 1280/189;
-    background-image: url("../photos/pc-photo/contact.png");
-    background-position: center;
-    background-size: cover;
+    height: 170px;
+    margin: 40px auto 20px;
   }
-  main div#top div#contact-in div.contact-back h2 {
+  main div#top div#contact-in div.contact-back div.rhombus {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  main div#top div#contact-in div.contact-back div.rhombus h2 {
     width: 100%;
-    line-height: 15vw;
     text-align: center;
+    font-size: 16px;
   }
   main div#top div#contact-in form {
     max-width: 400px;
@@ -1473,14 +1716,18 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    aspect-ratio: 1280/280;
-    background-image: url("../photos/pc-photo/profile.png");
-    background-position: center;
-    background-size: cover;
+    height: 170px;
+    margin: 40px auto 20px;
   }
-  main div#top div.profile-container div#profile div.profile-back h2 {
+  main div#top div.profile-container div#profile div.profile-back div.rhombus {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  main div#top div.profile-container div#profile div.profile-back div.rhombus h2 {
     width: 100%;
     text-align: center;
+    font-size: 16px;
   }
   main div#top div.profile-container div#profile div {
     width: 100%;
@@ -1490,9 +1737,9 @@ main {
     align-items: center;
     align-content: center;
   }
-  main div#top div.profile-container div#profile div img.profile-img {
+  main div#top div.profile-container div#profile div img.profile-img01 {
     width: 250px;
-    aspect-ratio: 223/141;
+    aspect-ratio: 400/400;
   }
   main div#top div.profile-container div#profile div h3 {
     width: 100%;
@@ -1511,13 +1758,20 @@ main {
   main div#top div.profile-container div#profile div div.profile-text p {
     width: 100%;
   }
-  main div#top div.profile-container div#profile div.programming-text h3 {
-    font-size: 20px;
-    padding: 40px 0 20px;
-  }
-  main div#top div.profile-container div#profile div.programming-text p {
+  main div#top div.profile-container div#profile div.programming-back {
     width: 100%;
-    padding: 0 0 20px;
+    height: 140px;
+    margin: 40px auto 20px;
+  }
+  main div#top div.profile-container div#profile div.programming-back div.rhombus {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  main div#top div.profile-container div#profile div.programming-back div.rhombus h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
   }
   main div#top div.profile-container div#profile ul {
     display: flex;
@@ -1529,16 +1783,44 @@ main {
     margin: 0 auto;
   }
   main div#top div.profile-container div#profile ul li {
-    width: 18%;
+    width: 100%;
     list-style: none;
   }
   main div#top div.profile-container div#profile ul li a {
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
     width: 100%;
+    padding: 10px 0;
   }
   main div#top div.profile-container div#profile ul li a img {
     display: block;
+    width: 20%;
+  }
+  main div#top div.profile-container div#profile ul li a div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  main div#top div.profile-container div#profile ul li a div img {
+    display: block;
+    width: 150px;
+  }
+  main div#top div.profile-container div#profile ul li a div h2 {
     width: 100%;
+    padding: 10px 40px;
+    font-size: 18px;
+    text-align: center;
+  }
+  main div#top div.profile-container div#profile ul li a div p {
+    width: 100%;
+    font-size: 16px;
+    padding: 0 40px;
   }
   main div#top div.blog {
     display: flex;
@@ -1640,10 +1922,12 @@ main {
 }
 
 footer {
+  position: relative;
   width: 100%;
   height: 40px;
   background-color: #d9d9d9;
   overflow: hidden;
+  z-index: 11;
 }
 footer p {
   width: 100%;

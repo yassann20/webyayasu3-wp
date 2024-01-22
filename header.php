@@ -21,20 +21,30 @@ session_start();
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body><!--以下、幾何学模様の要素全体幅で表示-->
+    <div id="particles-js">
+
+    </div>
     <!--ヘッダーコンテンツ-->
     <header>
         <!--メニューコンテンツ-->
         <nav id="Menu">
             <?php
             $args = array(
+                'menu' => 'main-menu',
                 'container' => false,
                 'echo' => true,
+                'theme_location' => 'main-menu',
+                'container' => false,
             );
             wp_nav_menu($args);
             ?>
         </nav>
         <!--/メニューコンテンツ-->
-        <h1></h1>
+        <div class="menubar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
     <!--/ヘッダーコンテンツ-->
